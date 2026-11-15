@@ -10,9 +10,21 @@
       </div>
 
       <nav class="nav">
-        <router-link class="nav-item active" to="/employee">
+        <router-link :class="['nav-item', { active: $route.path === '/employee' }]" to="/employee">
           <i class="el-icon-user" />
           <span>员工管理</span>
+        </router-link>
+        <router-link :class="['nav-item', { active: $route.path === '/category' }]" to="/category">
+          <i class="el-icon-menu" />
+          <span>分类管理</span>
+        </router-link>
+        <router-link :class="['nav-item', { active: $route.path === '/dish' }]" to="/dish">
+          <i class="el-icon-dish" />
+          <span>菜品管理</span>
+        </router-link>
+        <router-link :class="['nav-item', { active: $route.path === '/setmeal' }]" to="/setmeal">
+          <i class="el-icon-food" />
+          <span>套餐管理</span>
         </router-link>
       </nav>
 

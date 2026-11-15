@@ -12,8 +12,8 @@ const routes = [
   },
   {
     path: '/cart',
-    component: () => import('../views/Placeholder.vue'),
-    meta: { title: '购物车', owner: 'E' }
+    component: () => import('../views/Cart.vue'),
+    meta: { title: '购物车', owner: 'C' }
   },
   {
     path: '/orders',
